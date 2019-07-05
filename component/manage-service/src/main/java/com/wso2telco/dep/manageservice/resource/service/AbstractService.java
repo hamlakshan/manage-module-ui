@@ -23,13 +23,8 @@ public abstract class AbstractService implements Serviceable {
     public String getUrl(ServiceUrl serviceUrl) {
 
         String url = "";
-
-        switch (serviceUrl) {
-            case MSISDN_VALIDATION_SERVICE:
-                url = serviceUrl.getValue();
-                break;
-            default:
-                break;
+        if(serviceUrl == ServiceUrl.MSISDN_VALIDATION_SERVICE){
+            url = serviceUrl.getValue();
         }
         return url;
     }

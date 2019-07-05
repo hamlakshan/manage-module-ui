@@ -34,12 +34,8 @@ public class ServiceFactory {
 
     public Serviceable getService(ServiceTypes serviceTypes) {
         Serviceable service = null;
-        switch (serviceTypes) {
-            case MSISDN_VALIDATION:
-                service = ValidationFactory.getInstance().getMsisdnValidationService();
-                break;
-            default:
-                break;
+        if(serviceTypes == ServiceTypes.MSISDN_VALIDATION){
+            service = ValidationFactory.getInstance().getMsisdnValidationService();
         }
         return service;
     }

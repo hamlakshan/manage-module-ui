@@ -23,7 +23,7 @@ public class Callback {
     @JsonProperty("message")
     private String message;
     @JsonIgnore
-    private Map<String, Object> additionalProperties = new HashMap<String, Object>();
+    private Map<String, Object> additionalProperties = new HashMap<>();
 
     @JsonProperty("payload")
     public Object getPayload() {

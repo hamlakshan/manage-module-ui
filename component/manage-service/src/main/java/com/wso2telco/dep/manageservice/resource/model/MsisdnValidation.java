@@ -28,7 +28,7 @@ public class MsisdnValidation implements RequestTransferable {
     @JsonProperty("digitsGroup")
     private Integer digitsGroup;
     @JsonIgnore
-    private Map<String, Object> additionalProperties = new HashMap<String, Object>();
+    private Map<String, Object> additionalProperties = new HashMap<>();
 
     @JsonProperty("valid")
     public List<String> getValid() {
